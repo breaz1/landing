@@ -1,0 +1,2784 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Шрифты не скачут! */
+html * {
+    max-height: 1000000px;
+}
+
+/* /Шрифты не скачут! */
+
+
+body {
+    min-width: 1218px;
+    font: 14px "PTS55F", sans-serif;
+    background: #fff;
+    color: #000;
+}
+
+li {
+    list-style-type: none;
+}
+
+span, a {
+    text-decoration: none;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    line-height: 1;
+    color: #323232;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-weight: normal;
+    line-height: 1;
+}
+
+input, button, textarea {
+    outline: none;
+    border: none;
+    resize: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+input[type="submit"] {
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: "BebasNeueBold";
+    font-display: swap;
+    src: url("fonts/Bebas-Neue-font/bebas/TTF's/BebasNeue Bold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/BebasNeueBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "BebasNeueBook";
+    font-display: swap;
+    src: url("fonts/Bebas-Neue-font/bebas/TTF's/BebasNeue Book.eot?#iefix") format("embedded-opentype"),
+    url("fonts/BebasNeueBook.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "BebasNeueLight";
+    font-display: swap;
+    src: url("fonts/Bebas-Neue-font/bebas/TTF's/BebasNeueLight.eot?#iefix") format("embedded-opentype"),
+    url("fonts/BebasNeueLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "BebasNeueRegular";
+    font-display: swap;
+    src: url("fonts/Bebas-Neue-font/bebas/TTF's/BebasNeue Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/BebasNeueRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "BebasNeueThin";
+    font-display: swap;
+    src: url("fonts/Bebas-Neue-font/bebas/TTF's/BebasNeue Thin.eot?#iefix") format("embedded-opentype"),
+    url("fonts/BebasNeueThin.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "PTS55F";
+    font-display: swap;
+    src: url("fonts/Pt-Sans-font/PTS55F.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Pts55f.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "PTS56F";
+    font-display: swap;
+    src: url("fonts/Pt-Sans-font/PTS56F.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Pts56f.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "PTS75F";
+    font-display: swap;
+    src: url("fonts/Pt-Sans-font/PTS75F.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Pts75f.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "PTS76F";
+    font-display: swap;
+    src: url("/fonts/Pt-Sans-font/PTS76F.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Pts76f.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: ArsenalBold;
+    font-display: swap;
+    src: url(/fonts/Arsenal-Bold.otf);
+}
+
+@font-face {
+    font-family: "ImpactRegular";
+    font-display: swap;
+    src: url("https://perm.okna-olkon.ru/landing_files/css/../fonts/ImpactRegular/ImpactRegular.eot");
+    src: url("https://perm.okna-olkon.ru/landing_files/css/../fonts/ImpactRegular/ImpactRegular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/ImpactRegular.woff") format("woff"),
+    url("fonts/impactRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* Убираем значок скайпа */
+.skype_c2c_print_container.notranslate {
+    display: block !important;
+}
+
+.skype_c2c_menu_container {
+    display: none !important;
+}
+
+#skype_c2c_container {
+    display: none !important;
+}
+
+/* /Убираем значок скайпа */
+
+.clear {
+    clear: both;
+}
+#icon{
+    opacity: 1;
+}
+h2 {
+    font: 33px  "BebasNeueBold";
+    text-transform: uppercase;
+    color: #393939;
+    letter-spacing: 0.2px;
+}
+
+h2::after {
+    display: block;
+    margin-top: 9px;
+    content: '';
+    width: 93px;
+    height: 3px;
+    background: #8d3dff;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 24 !important;
+    width: 1170px;
+}
+
+.block-container{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header .container {
+    padding: 24px 24px 19px;
+}
+
+.header .line {
+    display: inline-block;
+    margin: 10.5px 8px 0 26px;
+    width: 2px;
+    height: 98px;
+    vertical-align: top;
+    background-color: #71BC3F;
+}
+
+.header .site-name {
+    display: inline-block;
+    margin-top: 7px;
+    vertical-align: top;
+    width: 350px;
+    color: #070707;
+}
+
+.header .site-name p {
+    font: 30px/36px "BebasNeueRegular";
+}
+
+.header .address, .footer .address {
+    display: inline-block;
+    margin: 12px 0 0 42px;
+    width: 290px;
+    vertical-align: top;
+    font: 21px "BebasNeueBook";
+    color: #000;
+}
+
+.header .address {
+    display: inline-block;
+    margin: 12px 0 0 -15px;
+    width: 250px;
+    vertical-align: top;
+    font: 21px "BebasNeueBook";
+    color: #000;
+}
+
+.header .rezhim {
+    display: inline-block;
+    margin: 12px 0 0 -50px;
+    width: 190px;
+    vertical-align: top;
+    font: 21px "BebasNeueBook";
+    color: #000;
+}
+
+.header .address img, .footer .address img {
+    margin-top: 1px;
+    vertical-align: top;
+}
+
+.header .address .address-text, .footer .address .address-text {
+    display: inline-block;
+    margin-left: 13px;
+}
+
+.header .address .address-text p + p, .footer .address .address-text p + p {
+    line-height: 26px;
+}
+
+.header .address .address-text a, .footer .address .address-text a {
+    color: #3083bd;
+    border-bottom: 1px solid #3083bd;
+}
+
+.header .address .address-text a:hover, .footer .address .address-text a:hover {
+    border-color: transparent;
+}
+
+.header .phone.phone-thank p {
+    float: left;
+}
+
+.header .phone {
+    float: right;
+    margin-top: 21px;
+    font: 34.4px "BebasNeueBold";
+    color: #333;
+    text-align: right;
+}
+
+.header .phone .order_call {
+    display: inline-block;
+    margin-top: 9px;
+    padding: 0 17px 0 36px;
+    height: 28px;
+    background: #8d3dff url("https://perm.okna-olkon.ru/landing_files/css/../images/phone.png") no-repeat 13px center;
+    border-radius: 2px;
+    font: 12px/27px "PTS75F";
+    color: #fff;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    border-bottom: 3px solid #6d2fd2;
+}
+.first-scr{
+    background: url(img/fam.jpg) no-repeat center top;
+    background-size: cover;
+}
+.header .phone .order_call:hover {
+    background-color: #8d3dff;
+}
+
+.header .phone .order_call span,
+.footer .phone .order_call span {
+    color: #fff;
+}
+
+
+.main-screen {
+    background: url("img/mainpict.jpg") no-repeat center top;
+    background-size: cover;
+    min-height: 587px;
+}
+
+.main-screen .container {
+    padding: 47px 24px 0;
+}
+
+.main-screen .main-text {
+    float: right;
+    width: 535px;
+}
+
+.main-screen .main-text h1 {
+    font: 52px "BebasNeueBold";
+    margin-bottom: 16px;
+    font-size: 52px;
+    line-height: 62px;
+    letter-spacing: 0.9px;
+}
+
+.main-screen .main-text h1 span {
+    color: #71bc3f;
+}
+
+.main-screen .main-text h3 {
+    font: 36px/43px "BebasNeueBold";
+    letter-spacing: 0.5px;
+    color: #333333;
+}
+
+.main-screen .main-text h3 span {
+    color: #53892f;
+}
+
+.application.application-main {
+    box-shadow: 0 4px 5px rgba(58, 59, 59, 0.25), inset 0 1px 2px rgba(167, 169, 169, 0.56);
+}
+
+.application {
+    margin: 41px auto 0;
+    padding: 15px 0 22px;
+    width: 1067px;
+    background-color: rgba(253, 252, 251, 0.70);
+    border-radius: 2px;
+    text-align: center;
+}
+
+.application p {
+    font: 24px "PTS55F";
+    color: #393939;
+}
+
+.application p span {
+    font: 24px "PTS75F";
+    color: #393939;
+}
+
+.application form {
+    margin-top: 25px;
+}
+
+.application input {
+    border-radius: 8px;
+}
+
+.application input[type="text"], .application input[type="email"], .application input[type="tel"] {
+    margin-right: 15px;
+    padding: 0 60px;
+    height: 63px;
+    width: 175px;
+    background: #fff url("https://perm.okna-olkon.ru/landing_files/css/../images/phone-gray.png") no-repeat 32px center;
+    box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.4);
+    color: #333;
+    font: 18px "PTS55F";
+}
+
+.application form .user_name {
+    background: #fff url("https://perm.okna-olkon.ru/landing_files/css/../images/user_name.png") no-repeat 13px center;
+}
+
+.application form .user_phone {
+    background: #fff url("https://perm.okna-olkon.ru/landing_files/css/../images/phone-gray.png") no-repeat 13px center;
+}
+
+.application input[name="submit"] {
+    /*padding: 0 0 0 30px;*/
+    height: 63px;
+    width: 240px;
+    font: 21px "PTS75F";
+    /* background: #71BC3F url("https://perm.okna-olkon.ru/landing_files/css/../images/people.png") no-repeat 36px center; */
+    background-color: #71BC3F;
+    color: #FBFBFB;
+    vertical-align: bottom;
+    border-bottom: 4px solid #53892F;
+}
+
+.application input[name="submit"]:hover {
+    background-color: #63B027;
+}
+
+input[type="text"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder { /* WebKit browsers */
+    color: #A7A7A7;
+    font: 18px "PTS55F";
+    opacity: 1;
+}
+
+input[type="submit"]::-moz-placeholder, input[type="email"]::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #A7A7A7;
+    font-size: 18px "PTS55F";
+    opacity: 1;
+}
+
+input[type="submit"]:-ms-input-placeholder, input[type="email"]::-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #A7A7A7;
+    font-size: 18px "PTS55F";
+    opacity: 1;
+}
+
+input[type="submit"]::-o-placeholder, input[type="email"]::-o-placeholder { /* Opera */
+    color: #A7A7A7;
+    font-size: 18px "PTS55F";
+    opacity: 1;
+}
+
+.order_guager {
+    display: none;
+    margin-top: 20px;
+    padding: 0 0 0 30px;
+    height: 32px;
+    width: 90%;
+    font: 15px/2.15 "PTS75F";
+    background: #71BC3F url("https://perm.okna-olkon.ru/landing_files/css/../images/people.png") no-repeat 12px center;
+    background-size: 20px;
+    color: #FBFBFB;
+    vertical-align: bottom;
+    border-bottom: 3px solid #53892F;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Задайте желаемую прозрачность и цвет фона */
+    z-index: 9999; /* Убедитесь, что z-index выше, чем у popup */
+  }
+.order_guager:hover {
+    background-color: #63B027;
+}
+.popup_box.order_phone {
+    z-index: 10000; /* Установите значение z-index больше, чем у полупрозрачного фона */
+    /* Другие стили для вашего popup */
+  }
+
+.products .container {
+    padding: 21px 24px 57px 24px;
+}
+
+.products .wr-products {
+    display: block;
+    text-align: center;
+}
+
+.products .product-item {
+    display: inline-table;
+    margin: 42px 10px 0;
+    padding: 18px 0 23px;
+    width: 256px;
+    border: 1px solid #E7E8E8;
+    text-align: left;
+    vertical-align: top;
+    text-align: center;
+}
+
+.products .product-item .photo {
+    height: 195px;
+    line-height: 195px;
+}
+
+.products .product-item .photo img {
+    max-width: 260px;
+    max-height: 195px;
+    vertical-align: middle;
+}
+
+.products .product-item .description {
+    margin-top: 44px;
+    padding: 0 28px;
+}
+
+.products .product-item .description .title {
+    font: 24px/1 "BebasNeueBold";
+    color: #393939;
+}
+
+.products .product-item .description table {
+    margin-top: 14px;
+    text-align: left;
+}
+
+.products .product-item .description table th {
+    font-weight: normal;
+    padding: 2px 5px 2px 0;
+    width: 84px;
+}
+
+.products .product-item .description .description-size {
+    padding: 0 14px;
+}
+
+.products .product-item .description .description-old-price {
+    padding: 0 14px;
+}
+
+.products .product-item .description .price-month {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.products .product-item .description .price-month .name {
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.products .product-item .description .price-month .price {
+    position: relative;
+    float: right;
+    margin-right: 12px;
+    padding: 0 28px 0 12px;
+    height: 32px;
+    width: auto;
+    line-height: 2.2;
+    background: #fabffc;
+    border-radius: 20px;
+}
+
+.products .product-item .description .price-month .price span {
+    display: inline-block;
+    position: absolute;
+    top: -9px;
+    right: -16px;
+    padding: 5px;
+    background: #d995f3;
+    border-radius: 50%;
+    color: #fff;
+    line-height: 18px;
+}
+
+.products .product-item .order-product {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 0 15px;
+    width: 100%;
+    height: 28px;
+    background: #8d3dff;
+    border-radius: 10px;
+    font: 14px/27px "PTS75F";
+    color: #fff;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    border-bottom: 3px solid #6d2fd2;
+}
+
+.products .product-item .order-product:hover {
+    background-color: #8d3dff;
+}
+
+.products .prices_to_site {
+    margin-top: 57px;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/*--------СЛАЙДЕР--------*/
+.advantages .slider {
+    width: 100%;
+}
+
+.advantages .slide {
+    position: relative;
+    width: 100%;
+    height: 559.4px;
+    background-size: cover;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FBFBFB;
+}
+
+.advantages .slide h3 {
+    display: block;
+    margin-top: 138px;
+    font: 110px/132px "BebasNeueBold";
+}
+
+.advantages .slide-2 {
+    background-size: cover;
+}
+
+.advantages .slide-3 {
+    background-size: cover;
+}
+
+/*Если есть поддержка webp, то отдаем webp в слайдере, если нет то png*/
+.no-webp .slide {
+    background: url("https://perm.okna-olkon.ru/landing_files/css/../images/slides/slide-1.png") no-repeat center top;
+}
+
+.webp .slide {
+    background: url("https://perm.okna-olkon.ru/landing_files/css/../images/slides/slide-1.webp") no-repeat center top;
+}
+
+.no-webp .slide-2 {
+    background: url("https://perm.okna-olkon.ru/landing_files/css/../images/slides/slide-2.png") no-repeat center top;
+}
+
+.webp .slide-2 {
+    background: url("https://perm.okna-olkon.ru/landing_files/css/../images/slides/slide-2.webp") no-repeat center top;
+}
+
+.no-webp .slide-3 {
+    background: url("https://perm.okna-olkon.ru/landing_files/css/../images/slides/slide-3.png") no-repeat center top;
+}
+
+.webp .slide-3 {
+    background: url("https://perm.okna-olkon.ru/landing_files/css/../images/slides/slide-3.webp") no-repeat center top;
+}
+
+/*--------/СЛАЙДЕР--------*/
+
+
+.works {
+    background: url("https://perm.okna-olkon.ru/landing_files/css/../images/works.png") no-repeat center 176px;
+}
+
+.works .container {
+    padding: 73px 24px 42px;
+}
+
+.works h2 {
+    font-size: 48px;
+}
+
+.works .work-top {
+    margin-top: 82px;
+}
+
+.works .work-bottom {
+    margin-top: 67px;
+}
+
+.works .work-item {
+    display: inline-block;
+    margin: 0 51px 0 132px;
+    width: 360px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.works .work-item.work-2 img {
+    transition: all 0.9s;
+}
+
+.works .work-item.work-3 img {
+    transition: all 1.3s;
+}
+
+.works .work-item.work-4 img {
+    transition: all 2s;
+}
+
+.works .work-item img {
+    transition: all 0.4s;
+    opacity: 0;
+    margin-top: -5px;
+}
+
+.works .work-item p {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+}
+
+.works .work-text {
+    position: relative;
+    margin: 70px 0 0 287px;
+    padding: 22px 15px 25px;
+    width: 434px;
+    border: 1px solid #8d3dff;
+    border-radius: 9px;
+}
+.sell h3{
+    margin-bottom: 50px !important;
+}
+.works .work-text p {
+    line-height: 22px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.works .work-text img {
+    position: absolute;
+    bottom: 6px;
+    right: 27px;
+}
+
+.main-video {
+    background: url("https://perm.okna-olkon.ru/landing_files/css/../images/bg-video.jpg") no-repeat center;
+    background-size: cover;
+    color: #fff;
+    transition: all 0.8s;
+    cursor: pointer;
+}
+
+.main-video:hover {
+    opacity: 0.87;
+}
+
+.main-video .container {
+    min-height: 560px;
+}
+
+.main-video .video {
+    display: inline-block;
+    margin: 169px 0 0 205px;
+    width: 758px;
+    line-height: 200px;
+}
+
+.main-video .video img {
+    display: inline-block;
+    vertical-align: middle;
+    transition: all 0.8s;
+}
+
+.main-video:hover img {
+    transform: rotate3d(1, 0, 1, 360deg) scale(1.3);
+}
+
+.main-video .video h3 {
+    display: inline-block;
+    margin-left: 48px;
+    font: 60px/72px "BebasNeueBold";
+    letter-spacing: 0.2px;
+    vertical-align: middle;
+}
+
+
+.about-clients .container {
+    padding: 55px 24px 60px;
+}
+
+.about-clients .advantages {
+    text-align: center;
+}
+
+.about-clients .advantages-item {
+    display: inline-block;
+    margin: 50px 13px 0 10px;
+    width: 165px;
+    vertical-align: top;
+    color: #333;
+}
+
+.about-clients .advantages-item .photo {
+    margin-bottom: 13px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.about-clients .advantages-item .photo img {
+    vertical-align: middle;
+}
+
+.about-clients .advantages-item .name {
+    font: 36px "BebasNeueBold";
+}
+
+.about-clients .advantages-item .text {
+    font: 14px/24px "PTS55F";
+}
+
+.about-clients .about-items {
+    margin: 104px 0 55px;
+}
+
+.about-clients .about-items .about-item {
+    margin-top: 80px;
+}
+
+.about-clients .about-items .about-photos {
+    display: inline-block;
+    width: 700px;
+}
+
+.about-clients .about-photos .photos-top img + img {
+    margin-left: 46px;
+}
+
+.about-clients .about-photos .photos-top img {
+    display: inline-block;
+    width: 200px;
+    height: 197px;
+}
+
+.about-clients .about-photos .photos-bottom {
+    margin-top: 37px;
+}
+
+.about-clients .about-photos .photos-bottom .photo-left {
+    display: inline-block;
+    width: 200px;
+    height: 197px;
+    vertical-align: middle;
+}
+
+.about-clients .photos-bottom .about-video {
+    position: relative;
+    display: inline-block;
+    margin-left: 46px;
+    vertical-align: middle;
+    transition: all 0.8s;
+    cursor: pointer;
+}
+
+.about-clients .photos-bottom .about-video:hover {
+    opacity: 0.8;
+}
+
+.about-clients .photos-bottom .about-video img {
+    width: 449px;
+    height: 276px;
+}
+
+.about-clients .photos-bottom .about-video .look-review {
+    position: absolute;
+    top: 102px;
+    left: 160px;
+}
+
+.about-clients .photos-bottom .about-video .look-review img {
+    display: inline-block;
+    margin-right: 8px;
+    width: 35px;
+    height: auto;
+    vertical-align: middle;
+    transition: all 0.8s;
+}
+
+.about-clients .photos-bottom .about-video:hover .look-review img {
+    transform: rotate3d(1, 0, 1, 360deg) scale(1.3);
+}
+
+.about-clients .photos-bottom .about-video .look-review p {
+    display: inline-block;
+    width: 120px;
+    vertical-align: middle;
+    font: 18px "PTS75F";
+    color: #fff;
+}
+
+.about-clients .about-items .about-text {
+    position: relative;
+    bottom: 10px;
+    float: right;
+    width: 370px;
+}
+
+.about-clients .about-items .about-text h3 {
+    margin-bottom: 46px;
+    font: 48px/57px "BebasNeueBold";
+    color: #333;
+}
+
+.about-clients .about-items .about-text h3 span {
+    color: #53892F;
+}
+
+.about-clients .about-items .about-text .installation {
+    margin-bottom: 50px;
+    font: 30px "BebasNeueBold";
+    color: #0D8800;
+}
+
+.about-clients .about-items .about-text .text {
+    margin-top: 16px;
+    line-height: 17px;
+}
+
+.about-clients .about-item.about-items-middle .about-text {
+    float: left;
+}
+
+.about-clients .about-item.about-items-middle .about-photos {
+    float: right;
+}
+
+.about-clients .about-bottom {
+    margin-top: 45px;
+    /*	width: 625px;*/
+    width: 100%;
+}
+
+.about-clients .about-bottom h3 {
+    margin-bottom: 46px;
+    font: 52px/62px "BebasNeueBold";
+    color: #333;
+}
+
+.about-clients .about-bottom h3 span {
+    color: #71BC3F;
+}
+
+.about-clients .about-bottom .text {
+    margin-top: 17px;
+    /*	width: 500px;*/
+    width: 100%;
+    font-size: 15.1px;
+    line-height: 18px;
+}
+
+
+.about-company .slider .slide {
+    min-height: 560px;
+    background: url("https://perm.okna-olkon.ru/landing_files/css/../images/company-1.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.about-company .slider .slide.slide-2 {
+    background: url("https://perm.okna-olkon.ru/landing_files/css/../images/company-2.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.about-company .slider .slide.slide-3 {
+    background: url("https://perm.okna-olkon.ru/landing_files/css/../images/company-3.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.about-company .slider .slide.slide-4 {
+    background: url("https://perm.okna-olkon.ru/landing_files/css/../images/company-4.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.where-to-find .container {
+    padding: 70px 24px 44px;
+    font: 52px "BebasNeueBold";
+    color: #333333;
+}
+
+.where-to-find .main-address {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 98px;
+    width: 290px;
+    vertical-align: top;
+}
+
+.where-to-find .address {
+    display: inline-block;
+    margin: 46px 0 0 0px;
+    vertical-align: top;
+    font: 24px "BebasNeueBook";
+    color: #000;
+}
+
+.where-to-find .address img {
+    margin-top: 4px;
+    vertical-align: top;
+}
+
+.where-to-find .address .address-text {
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.where-to-find .address .address-text p {
+    line-height: 30px;
+}
+
+.where-to-find .address .address-text a {
+    display: inline-block;
+    text-decoration: underline;
+    color: #3083bd;
+}
+
+.where-to-find .address .address-text a:hover {
+    text-decoration: none;
+}
+
+.where-to-find .questions {
+    display: inline-block;
+    margin-left: 258px;
+}
+
+.where-to-find .questions .question-manager {
+    display: inline-block;
+    margin-top: 17px;
+    padding: 16px 0 19px 61px;
+    width: 385px;
+    font: 28px "PTS75F";
+    color: #FBFBFB;
+    background: #71BC3F;
+    border-radius: 11px;
+    border-bottom: 3px solid #53892F;
+    cursor: pointer;
+}
+
+.where-to-find .questions .question-manager:hover {
+    background-color: #63B027;
+}
+
+.where-to-find .questions p {
+    margin-left: 8px;
+    line-height: 62px;
+    letter-spacing: 1px;
+}
+
+
+.main-map {
+    position: relative;
+}
+
+.main-map iframe {
+    display: block;
+    width: 100%;
+    height: 560px;
+}
+
+.bg-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.footer .container {
+    padding: 41px 0 36px;
+}
+
+.footer .line {
+    display: inline-block;
+    margin: 10.5px 8px 0 26px;
+    width: 2px;
+    height: 98px;
+    vertical-align: top;
+    background-color: #8d3dff;
+    float: left;
+}
+
+.footer .site-name {
+    display: inline-block;
+    margin-top: 7px;
+    vertical-align: top;
+    width: 350px;
+    color: #070707;
+    float: left;
+}
+
+.footer .site-name p {
+    font: 30px/36px "BebasNeueRegular";
+}
+
+.footer .requisites {
+    display: inline-block;
+    margin: 14px 0 0 60px;
+    vertical-align: top;
+    font: 12px "PTS55F";
+}
+
+.footer .requisites a {
+    text-decoration: underline;
+    color: #3083BD;
+}
+
+.footer .requisites a:hover {
+    text-decoration: none;
+}
+
+.footer .phone {
+    float: right;
+    font: 34.4px "BebasNeueBold";
+    color: #333;
+    text-align: right;
+}
+
+.footer .phone .order_call {
+    display: inline-block;
+    margin-top: 9px;
+    padding: 0 17px 0 36px;
+    height: 28px;
+    background: #8d3dff url("https://perm.okna-olkon.ru/landing_files/css/../images/phone.png") no-repeat 13px center;
+    border-radius: 2px;
+    font: 12px/27px "PTS75F";
+    color: #fff;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    border-bottom: 3px solid #6d2fd2;
+}
+
+.footer .phone .order_call:hover {
+    background-color: #6d2fd2;
+}
+
+
+.background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.popup_box {
+    display: none;
+    position: fixed;
+    z-index: 20;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -205px;
+    padding: 39px 20px 0;
+    width: 370px;
+    height: 430px;
+    background: #fff;
+    text-align: center;
+    color: #282528;
+}
+
+.popup_box form select {
+    margin-bottom: 5px;
+    padding-left: 43px;
+    width: 302px;
+    height: 50px;
+    border: 1px solid #8E8E8E;
+    border-radius: 3px;
+    font-size: 17px;
+    color: #212121;
+}
+
+.popup_box h3 {
+    font: 36px/1 "PTS75F";
+}
+
+.popup_box p {
+    margin-top: 5px;
+    font: 18px/22px "PTS75F";
+}
+
+.popup_box form {
+    margin-top: 25px;
+}
+
+.popup_box form .user_name {
+    background: #fff url("https://perm.okna-olkon.ru/landing_files/css/../images/user_name.png") no-repeat 13px center;
+}
+
+.popup_box form .user_phone {
+    background: #fff url("https://perm.okna-olkon.ru/landing_files/css/../images/user_phone.png") no-repeat 13px center;
+}
+
+.popup_box form input[type="text"], .popup_box form input[type="tel"] {
+    margin-bottom: 5px;
+    padding: 0 13px 0 47px;
+    width: 240px;
+    height: 50px;
+    border: 1px solid #8E8E8E;
+    border-radius: 3px;
+    font-size: 17px;
+    color: #212121;
+}
+
+.popup_box form input::-webkit-input-placeholder { /* WebKit browsers */
+    color: #212121;
+    opacity: 1;
+}
+
+.popup_box form input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #212121;
+    opacity: 1;
+}
+
+.popup_box form input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #212121;
+    opacity: 1;
+}
+
+.popup_box form input::-o-placeholder { /* Opera */
+    color: #212121;
+    opacity: 1;
+}
+
+.popup_box form input[type=submit] {
+    margin-top: 6px;
+    width: 302px;
+    height: 66px;
+    border-bottom: 3px solid #6d2fd2;
+    border-radius: 4px;
+    background: #8d3dff;
+    font-size: 20px;
+    color: #fff;
+}
+
+.popup_box form input[type=submit]:hover {
+    background: #6d2fd2;
+}
+
+.popup_box .close {
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    cursor: pointer;
+}
+
+.popup_box .close:hover {
+    opacity: 0.7;
+}
+
+
+.wr-thank .container {
+    padding: 30px 0;
+    color: #393939;
+}
+
+.wr-thank .thank-left {
+    display: inline-block;
+    /*width: 510px;*/
+    width: 100%;
+    vertical-align: top;
+}
+
+.wr-thank .thank-left .title {
+    font: 48px/1 "PTS75F";
+}
+
+.wr-thank .thank-left .description {
+    margin-top: 15px;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.wr-thank .thank-left .description span {
+    font-family: "PTS75F";
+}
+
+.wr-thank .thank-left .text {
+    margin-top: 31px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.wr-thank .thank-left .button + .button {
+    margin-left: 34px;
+}
+
+.wr-thank .thank-left .button {
+    display: inline-block;
+    margin-top: 30px;
+    width: 236px;
+    height: 50px;
+    background: #71BC3F;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    line-height: 2.7;
+    border-bottom: 3px solid #385E1E;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.wr-thank .thank-left .button:hover {
+    background: #58A227;
+}
+
+.wr-thank .thank-right {
+    display: inline-block;
+    width: 315px;
+    margin-top: 5px;
+    margin-left: 45px;
+    vertical-align: top;
+}
+
+.wr-thank .thank-right .people {
+    margin-bottom: 42px;
+    font-size: 21.85px;
+}
+
+.wr-thank .thank-right .people img {
+    width: 129px;
+    height: 129px;
+}
+
+.wr-thank .thank-right .people .name {
+    margin-top: 7px;
+    font-family: "PTS75F";
+}
+
+.wr-thank .thank-right .people .position {
+    margin-top: 8px;
+}
+
+.wr-thank .thank-right .people a {
+    display: block;
+    margin-top: 10px;
+    color: #3083bd;
+    text-decoration: underline;
+}
+
+.action p {
+    font: 24px "PTS55F";
+    color: #393939;
+    padding: 10px 0;
+}
+
+.action-image {
+    background: url(/images/action-image.jpg) no-repeat center top;
+    height: 236px;
+}
+
+p.action-desc {
+    font-size: 18px;
+    text-align: center;
+    margin: -20px 0;
+}
+
+.action .container {
+    padding: 51px 24px 10px;
+}
+
+.action-image1 {
+    background: url(/images/action-image.jpg) no-repeat center top;
+    height: 236px;
+}
+
+
+#bg_popup {
+    background-color: #5dc044;
+    background-image: url("https://perm.okna-olkon.ru/landing_files/css/../images/daily-lottery.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-family: ArsenalBold;
+    height: 320px;
+}
+
+#bg_popup .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#bg_popup form input[type=submit] {
+    background-color: #fc9816;
+    background: url(/images/btn-2.png) no-repeat;
+    border: 0;
+    background-size: 100% 50px;
+    height: 50px;
+}
+
+#bg_popup h3 {
+    font-family: ArsenalBold;
+    font-size: 25px;
+}
+
+#bg_popup form .user_name, #bg_popup form .user_phone {
+    background: #fff;
+}
+
+#bg_popup form input[type="text"] {
+    margin-bottom: 10px;
+    padding: 0 30px 0;
+    width: 240px;
+    height: 50px;
+    border: 0;
+    border-radius: 0 20px 0 0;
+    font-size: 17px;
+    color: #212121;
+    text-align: center;
+}
+
+
+#bg_popup p {
+    margin-top: 5px;
+    font: 18px/18px "ArsenalBold";
+}
+
+
+.footer .address {
+    width: 290px;
+    float: left;
+}
+
+.footer a.logo {
+    float: left;
+}
+
+
+.sert img {
+    max-width: 170px;
+}
+
+.sert {
+    margin: 20px auto 0;
+    width: 100%;
+    text-align: center;
+}
+
+.application input[type="email"] {
+    background: #fff url("https://perm.okna-olkon.ru/landing_files/css/../images/email-gray.png") no-repeat 32px center;
+}
+
+#messegeResult {
+    font: 24px "PTS55F";
+    color: #393939;
+    /*padding: 10px 0;*/
+}
+
+#formMain input#button, #formMainV input#button {
+    /*padding: 0 0 0 30px;*/
+    height: 63px;
+    width: 400px;
+    font: 21px "PTS75F";
+    /* background: #71BC3F url("https://perm.okna-olkon.ru/landing_files/css/../images/people.png") no-repeat 36px center; */
+    background-color: #71BC3F;
+    color: #FBFBFB;
+    vertical-align: bottom;
+    border-bottom: 4px solid #53892F;
+}
+
+#formMainV input#button {
+    width: 250px;
+}
+
+.share {
+    padding: 20px;
+    text-align: center;
+}
+
+.share h2::after {
+    margin: 9px auto;
+    /* width: 100%; */
+}
+
+.v-left {
+    width: 80%;
+    float: left;
+}
+
+.v-right {
+    width: 20%;
+    float: right;
+    text-align: center;
+}
+
+.v-left .application.application-main {
+    width: 100%;
+}
+
+.v-right p.name {
+    margin-top: 7px;
+    font-family: "PTS75F";
+    line-height: 12px;
+}
+
+.v-right p.position {
+    margin-top: -10px;
+    font-size: 16px;
+}
+
+.v-right .vakansii a {
+    display: block;
+    font-weight: bold;
+    color: #3083bd;
+    text-decoration: underline;
+    font-size: 17px;
+}
+
+.v-right .people {
+    margin-top: 10px;
+}
+
+.v-right img {
+    border-radius: 100%;
+}
+
+.v-vdeo {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.v-vdeo h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.roistat-lh-pulsator-phone {
+    opacity: .95 !important;
+}
+
+.roistat-lh-pulsator-circle {
+    border-color: #ffffff;
+    opacity: .5;
+    -webkit-animation: roistat-lh-circle-anim 1s infinite ease-in-out !important;
+    -moz-animation: roistat-lh-circle-anim 1s infinite ease-in-out !important;
+    -ms-animation: roistat-lh-circle-anim 1s infinite ease-in-out !important;
+    -o-animation: roistat-lh-circle-anim 1s infinite ease-in-out !important;
+    animation: roistat-lh-circle-anim 1s infinite ease-in-out !important;
+}
+
+.roistat-lh-pulsator-img {
+    opacity: 1;
+    -webkit-animation: roistat-lh-img-anim 1s infinite ease-in-out !important;
+    -moz-animation: roistat-lh-img-anim 1s infinite ease-in-out !important;
+    -ms-animation: roistat-lh-img-anim 1s infinite ease-in-out !important;
+    -o-animation: roistat-lh-img-anim 1s infinite ease-in-out !important;
+    animation: roistat-lh-img-anim 1s infinite ease-in-out !important;
+}
+
+p.dop {
+    font-size: 15px;
+    text-transform: none;
+    margin-top: 5px;
+}
+
+p.sgl {
+    font-size: 14px;
+    margin-top: -8px;
+    color: #A9A9A9;
+}
+
+p.sgl a {
+    text-decoration: underline;
+    color: #A9A9A9;
+}
+
+@media screen and (min-width: 1218px) {
+
+}
+
+#balkonBlock {
+    text-align: center;
+}
+
+#balkonBlock .product-item {
+    width: 30%;
+}
+
+#balkon {
+    padding: 15px;
+    width: 20%;
+    margin: 0 auto;
+    font: 21px "PTS75F";
+    /* background: #71BC3F url(http://smr.okna-olkon.ru/css/../images/people.png) no-repeat 36px center; */
+    background-color: #71BC3F;
+    color: #FBFBFB;
+    vertical-align: bottom;
+    border-bottom: 4px solid #53892F;
+    border-radius: 8px;
+    margin: 18px auto 0;
+    cursor: pointer;
+}
+
+.balkonLink {
+    width: 100%;
+    text-align: center;
+}
+
+.balkonBlock {
+    display: none; /**скрываем блок контента спойлера**/
+    padding: 15px 20px; /**добавляем внутренний отступ**/
+}
+
+
+/******** MY CODE BEGIN /********/
+.highlight {
+    color: #ffffff;
+}
+
+.date-number {
+    color: #669934;
+}
+
+.header {
+    position: relative;
+}
+
+.container-top {
+    overflow: hidden;
+    min-height: 520px;
+    background-image: url("https://perm.okna-olkon.ru/landing_files/css/../video/bg.jpg");
+    background-size: cover;
+}
+
+.container-wrappers-top {
+    margin-top: 4em;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+}
+
+.wrapper-call-to-action {
+    position: relative;
+    background-color: rgba(36, 39, 43, 0.5);
+    text-align: center;
+    font-size: 48px;
+    font-family: "ImpactRegular";
+    color: rgb(102, 153, 52);
+}
+
+.wrapper-advantages {
+    margin-top: 50px;
+    background-color: rgba(36, 39, 43, 0.5);
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.list-advantages {
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.advantage {
+    float: left;
+    width: 30%;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+.advantage__icon {
+    width: 55px;
+    height: 55px;
+    float: left;
+    margin-right: 15px;
+    background: url("https://perm.okna-olkon.ru/landing_files/css/../images/star.svg") no-repeat center;
+    border: 1px solid #f1c40f;
+    border-radius: 50%;
+}
+
+.advantage__text {
+    overflow: hidden;
+}
+
+.call-to-action-text {
+    display: inline-block;
+    max-width: 1050px;
+}
+
+.application--top {
+    width: 100%;
+    background-color: rgba(36, 39, 43, 0.5);
+}
+
+.application--top form {
+    margin-top: 110px;
+}
+
+.application--top a.input-top {
+    padding: 0 10px 0 45px;
+}
+
+.application input.input-short[name="submit"] {
+    width: 230px;
+}
+
+.or {
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 20px;
+    color: #fff;
+}
+
+#video-background {
+    margin-top: -12em;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-image: url("https://perm.okna-olkon.ru/landing_files/css/../video/bg.jpg");
+    background-size: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+}
+
+.application--top a.input-top {
+    padding: 16px 10px;
+    height: 63px;
+    width: 240px;
+    font: 21px "PTS75F";
+    /* background: #71BC3F url("https://perm.okna-olkon.ru/landing_files/css/../images/people.png") no-repeat 36px center; */
+    background-color: #8d3dff;
+    color: #FBFBFB;
+    border-bottom: 4px solid #6d2fd2;
+    border-radius: 8px;
+}
+
+.application--top a.input-top:hover {
+    background-color: #6d2fd2;
+}
+
+
+.container-watch-all {
+    clear: both;
+    overflow: hidden;
+    padding: 0 !important;
+}
+
+.wrapper-watch-all {
+    background-image: linear-gradient(to right, #bc47e3 0%, #7b3ad4 100%);
+}
+
+.watch-all-descr {
+    margin-bottom: 50px;
+    font-family: "ImpactRegular";
+    font-size: 36px;
+    color: #fff;
+}
+
+.interrior {
+    float: left;
+    width: 331px;
+    height: 360px;
+    background: url("https://perm.okna-olkon.ru/landing_files/css/../images/interrior.png") no-repeat center;
+}
+
+.watch-all-text {
+    display: inline-block;
+    max-width: 635px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.btn-watch-all {
+    background-color: rgb(237, 28, 28);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-style: solid;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-color: rgb(196, 16, 16);
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 34px;
+    padding-right: 34px;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 11px 5px -7px rgba(0, 0, 0, 0.35);
+
+    margin-left: 27%;
+}
+
+.btn-watch-all:hover {
+    background-color: rgb(221, 18, 18);
+    border-color: rgb(157, 12, 12);
+    color: rgb(255, 255, 255);
+}
+
+.interrior--person {
+    float: left;
+    width: 530px;
+    height: 360px;
+}
+
+
+.li-title{
+    margin-bottom: 0 !important;
+    margin-top: 0px !important;
+}
+
+.no-webp .interrior--person {
+    background: url("https://perm.okna-olkon.ru/landing_files/css/../images/person.png") no-repeat center;
+}
+
+.webp .interrior--person {
+    background: url("img/dadya.png") no-repeat center;
+}
+
+.require-person {
+    display: inline-block;
+    max-width: 340px;
+    margin-left: 100px;
+    margin-top: 25px;
+}
+
+.require-person__text {
+    font-size: 32px;
+    font-weight: normal;
+    font-family: "BebasNeueRegular";
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.require-person-sub-text {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.how-to-get,
+.how-to-get__bonus {
+    font-size: 18px;
+    font-family: "BebasNeueRegular";
+    color: #fff;
+}
+
+.how-to-get__number {
+    font-size: 24px;
+    font-family: "ImpactRegular";
+    color: #000;
+}
+
+.application-require-person {
+    width: 340px;
+    margin-top: 0;
+    background-color: transparent;
+}
+
+.application-require-person form {
+    margin-top: 0;
+}
+
+.application-require-person input[type="text"],
+.application-require-person input.input-short[type="submit"],
+.application-require-person input.input-short[type="tel"] {
+    display: block;
+}
+
+.application-require-person input[type="text"],
+.application-require-person input[type="submit"],
+.application-require-person input[type="tel"] {
+    width: 100%;
+    /*  max-width: 314px; */
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 5px;
+}
+
+.application-require-person input.input-short[type="submit"] {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    padding: 8px 16px;
+    background-color: rgb(237, 28, 28);
+    border-bottom: 4px solid rgb(196, 16, 16);
+	font: 18px/28px "PTS75F";
+}
+
+.application-require-person input[type="submit"]:hover {
+    background-color: rgb(221, 18, 18);
+    border-color: rgb(157, 12, 12);
+    color: rgb(255, 255, 255);
+}
+
+.application-require-person form .user_name,
+.application-require-person form .user_phone {
+    background: none;
+    background-color: #fff;
+    color: grey;
+}
+
+.application-require-person form .user_name {
+    margin-bottom: 15px;
+}
+
+.application-require-person .checkbox-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.checkbox-agreement {
+    margin-right: 10px;
+}
+
+.checkbox-text__link {
+    text-decoration: underline dashed;
+    color: #fff;
+}
+
+
+.container-watch-our-video {
+    max-width: 440px;
+    margin: 40px auto 0;
+    clear: both;
+    overflow: hidden;
+}
+
+/* btn play begin */
+.play-button {
+    float: left;
+    margin-right: 20px;
+
+    display: block;
+    height: 76px;
+    width: 76px;
+    border-radius: 50%;
+    background: #EB2128;
+    position: relative;
+}
+
+.play-button:hover {
+    background: #d61d23;
+    cursor: pointer;
+}
+
+.play-button .play {
+    display: block;
+    height: 0;
+    width: 0;
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+    border-left: 19px solid #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    transform: translateY(-50%);
+    opacity: 1;
+    transition: all .25s ease-in-out;
+}
+
+/* btn play end */
+.watch-our-video-text {
+    margin-top: 33px;
+
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    font-size: 12px;
+    font-family: sans-serif;
+    color: #9C9C9C;
+    text-transform: uppercase;
+}
+
+#videoStory {
+    width: 39%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* СМОТРЕТЬ ВИДЕО ПРО НАШЕ ПРОИЗВОДСТВО BEGIN */
+.modal {
+    background-color: #fff;
+    border: .0725em solid #e5e5e5;
+    border-radius: .0725em;
+    box-shadow: 0 .25em .5em rgba(0, 0, 0, .3);
+    display: none;
+    max-width: 100%;
+    padding: .5em 1em;
+    visibility: hidden;
+    z-index: 2
+}
+
+@media (min-width: 40em) {
+    .modal {
+        max-width: 38%
+    }
+}
+
+.modal.active {
+    display: block;
+    left: 0;
+    max-height: 100%;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    visibility: visible;
+    -webkit-overflow-scrolling: touch
+}
+
+@media (min-width: 30em) {
+    .modal.active {
+        height: auto;
+        left: 3%;
+        margin-left: auto;
+        margin-right: auto;
+        right: 3%;
+        top: 50px
+    }
+}
+
+@media (min-width: 40em) {
+    .modal.active {
+        left: 8%;
+        right: 8%
+    }
+
+    .modal.active.modal-medium {
+        width: 35em
+    }
+
+    .modal.active.modal-small {
+        width: 25em
+    }
+}
+
+.modal:focus {
+    outline: none
+}
+
+.modal-bg {
+    background-color: #272727;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    opacity: .9;
+    right: 0;
+    top: 0;
+    z-index: 1
+}
+
+.close {
+    color: gray;
+    cursor: pointer;
+    float: right;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-decoration: none
+}
+
+.close:hover {
+    color: #5a5a5a;
+    cursor: pointer
+}
+
+
+.modal {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+
+    padding-bottom: 285px;
+}
+
+.modal iframe, .modal object, .modal embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 315px;
+}
+
+/* СМОТРЕТЬ ВИДЕО ПРО НАШЕ ПРОИЗВОДСТВО END */
+
+
+.oknoLink {
+    width: 100%;
+    text-align: center;
+}
+
+#okno {
+    padding: 15px;
+    width: 50%;
+    margin: 0 auto;
+    font: 19px "PTS75F";
+    /* background: #71BC3F url(http://smr.okna-olkon.ru/css/../images/people.png) no-repeat 36px center; */
+    background-color: #71BC3F;
+    color: #FBFBFB;
+    vertical-align: bottom;
+    border-bottom: 4px solid #53892F;
+    border-radius: 8px;
+    margin: 20px auto 0;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1230px) {
+
+    .container-top {
+        min-height: 720px;
+    }
+
+    .container-wrappers-top {
+        margin-top: 2em;
+        z-index: 10;
+    }
+
+    .wrapper-call-to-action {
+        font-size: 30px;
+    }
+
+    .call-to-action-text {
+        max-width: 750px;
+        line-height: 40px;
+        font-family: Arial, sans-serif;
+    }
+
+    .wrapper-advantages {
+        margin-top: 25px;
+        padding-top: 2px;
+        padding-bottom: 5px;
+    }
+
+    .list-advantages {
+        max-width: 560px;
+    }
+
+    .advantage {
+        float: none;
+        width: 100%;
+        height: 35px;
+        margin-right: 0;
+        margin-bottom: 45px;
+    }
+
+    #video-background {
+        margin-top: 0;
+        margin-bottom: 8em;
+    }
+
+    .application--top .form-top {
+        margin-top: 10px;
+    }
+
+    .application--top a.input-top,
+    .application--top input[type="text"] {
+        width: 15.5%;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .application--top {
+        background-color: transparent;
+    }
+
+    .application {
+        margin-top: 17px;
+    }
+
+    .application--top a.input-top,
+    .application--top input[type="text"],
+    .application input.input-short[name="submit"] {
+        display: block;
+        height: 40px;
+        margin: 0 auto 10px;
+    }
+
+    .application a.input-top-price {
+        height: 40px;
+    }
+
+    .application input.input-short[name="submit"],
+    .application a.input-top-price {
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+    }
+
+    .or {
+        display: block;
+        margin: 0 auto;
+        max-width: 300px;
+    }
+
+    .application.application-require-person input.input-short[type="submit"] {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .application--top a.input-top {
+        display: block;
+        margin: 0 auto;
+        padding: 4px 10px;
+        width: 280px;
+        height: 28px;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+
+    .container-top {
+        min-height: 730px;
+    }
+
+    .application.application--top {
+        background-color: transparent;
+    }
+
+    .application--top a.input-top,
+    .application--top input[type="text"] {
+        width: 300px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .interrior {
+        display: none;
+    }
+
+    .watch-all-text {
+        margin-top: 15px;
+        margin-bottom: 40px;
+        margin-left: 0;
+    }
+
+    .require-person {
+        display: block;
+        margin: 20px auto 0;
+    }
+
+    .application-require-person {
+        width: 100%;
+        padding: 5px;
+        background-color: transparent;
+    }
+
+    .require-person-sub-text {
+        margin-top: 20px;
+    }
+
+    #video-background {
+        margin-bottom: 11em;
+    }
+}
+.place{
+    color:white;
+}
+@media screen and (max-width: 1218px) {
+    .sgl {
+        margin-top: -28px;
+    }
+
+    .application.application--top {
+        width: calc(100% - 30px);
+        margin-top: 0;
+    }
+
+    .application a.input-top-price {
+        width: 280px;
+        margin-top: 4px;
+        border-radius: 10px;
+        font-size: 17px;
+        background: #8d3dff url("img/calc.jpg") no-repeat 13px center;
+    }
+
+    .application input.input-use-offer[type="submit"] {
+        background: #8d3dff url("https://perm.okna-olkon.ru/landing_files/css/../images/sale.png") no-repeat 13px center;
+    }
+
+    .application input.input-use-offer[type="submit"] {
+        margin-top: 15px;
+    }
+
+    .application.application-require-person input[type="submit"]:hover {
+        background-color: #dd1212;
+        border-color: rgb(157, 12, 12);
+    }
+
+    .application.application-require-person {
+        max-width: 340px;
+        margin-top: 0;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .application.application-require-person input[type="text"] {
+        width: 258px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    #video-background {
+        margin-bottom: 15em;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    #video-background {
+        margin-bottom: 18em;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    #video-background {
+        margin-bottom: 23em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .application--top a.input-top,
+    .application--top input[type="text"] {
+        width: 280px;
+        margin-bottom: 10px;
+    }
+
+    .watch-all-descr {
+        font-size: 25px;
+        font-family: Arial;
+        text-align: center;
+    }
+
+    #video-background {
+        margin-bottom: 28em;
+    }
+
+    .btn-watch-all {
+        width: 60%;
+        margin: 0 auto;
+        display: block;
+        padding-right: 10px;
+        padding-left: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 672px) {
+
+    .container-top {
+        min-height: 710px;
+    }
+
+    .btn-watch-all {
+        width: 75%;
+    }
+
+    .sgl {
+        margin-top: -25px;
+    }
+
+    .wrapper-call-to-action {
+        font-size: 25px;
+    }
+
+    .advantage-icon {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .advantage__text {
+        font-size: 17px;
+    }
+
+    .application.application--top {
+        width: calc(100% - 30px);
+    }
+
+    .application--top a.input-top,
+    .application--top input[type="text"] {
+        width: 256px;
+    }
+
+    .application.application--top input[name="submit"] {
+        width: 280px;
+    }
+
+    .list-advantages {
+        max-width: 310px;
+    }
+
+    .application.application-main--custom {
+        width: 300px;
+    }
+
+    .user_name--custom {
+        margin-bottom: 10px;
+    }
+
+    #balkon {
+        width: 270px;
+    }
+
+    .application.application-require-person input[type="text"] {
+        width: 220px;
+    }
+
+    .application.application-require-person input.input-short[type="submit"] {
+        width: 300px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .application-require-person .checkbox-text {
+        max-width: 300px;
+    }
+
+    #video-background {
+        margin-bottom: 28em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #video-background {
+        margin-bottom: 32em;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .sgl {
+        margin-top: -25px;
+    }
+
+    .container-top {
+        min-height: 715px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+
+    .container-top {
+        min-height: 770px;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .call-to-action-text {
+        padding-right: 5px;
+        padding-left: 5px;
+        line-height: 25px;
+    }
+
+    .container-top {
+        min-height: 740px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .wrapper-call-to-action {
+        font-size: 23px;
+    }
+
+}
+
+@media screen and (max-width: 445px) {
+
+    #video-background {
+        margin-bottom: 40em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .application--top .form-top {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .application--top a.input-top,
+    .application--top input {
+        width: 84%;
+    }
+
+    .application.application--top input{
+        width: 90%;
+    }
+
+    #video-background {
+        margin-bottom: 42em;
+    }
+
+    p.sgl {
+        margin-top: -25px;
+    }
+}
+
+/******** MY CODE END /********/
+        
+.a_first_screen {
+    min-height: 600px;
+    background: url("/landing_files/include/new/first-screen/images/bg.webp") no-repeat center top;
+    background-size: cover;
+}
+
+.a_first_screen_title {
+    padding: 80px 0 0 0;
+}
+
+.a_first_screen_title h1 {
+    font-family: "ImpactRegular";
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 52px;
+    color: #4F4F4F;
+    line-height: 70px;
+}
+
+.a_first_screen_title h1 span {
+    color: #D43C28;
+}
+
+.a_first_screen_subs {
+    margin-top: 40px;
+}
+
+.a_first_screen_subs img {
+    float: left;
+    margin-right: 15px;
+}
+
+.a_first_screen_subs h2 {
+    font: 36px "BebasNeueBold";
+    text-transform: uppercase;
+    color: #4F4F4F;
+    letter-spacing: 2px;
+    padding-top: 15px;
+}
+
+.a_first_screen_subs h2:after {
+    content: none;
+}
+
+.a_first_screen_form {
+    margin-top: 80px;
+    padding: 20px;
+    background: -moz-linear-gradient(278.72deg, rgba(113, 188, 63, 0.85) 0%, rgba(241, 196, 15, 0.75) 100%), #FFFFFF;
+    background: -webkit-linear-gradient(278.72deg, rgba(113, 188, 63, 0.85) 0%, rgba(241, 196, 15, 0.75) 100%), #FFFFFF;
+    background: linear-gradient(278.72deg, rgba(113, 188, 63, 0.85) 0%, rgba(241, 196, 15, 0.75) 100%), #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+}
+
+.a_first_screen_form .col {
+    width: 214px;
+    float: left;
+    margin-right: 15px;
+}
+
+.a_first_screen_form .col p {
+    height: 20px;
+    color: #4f4f4f;
+}
+
+.a_first_screen_form .col p span {
+    display: inline-block;
+    margin: 0 5px 0 0;
+    padding: 0;
+    color: red;
+}
+
+.a_first_screen_form input[type="text"], .a_first_screen_form input[type="email"], .a_first_screen_form input[type="tel"] {
+    padding: 0 15px;
+    height: 40px;
+    width: 100%;
+    color: #333;
+    font: 16px "PTS55F";
+    background: #FFFFFF;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+}
+
+.a_first_screen_form input[type="submit"] {
+    padding: 0;
+    height: 40px;
+    width: 145px;
+    margin: 20px 0 0 0;
+    font: 18px "PTS75F";
+    letter-spacing: 1.5px;
+    background: -moz-linear-gradient(360deg, #D43C28 8.84%, #FF7966 100%);
+    background: -webkit-linear-gradient(360deg, #D43C28 8.84%, #FF7966 100%);
+    background: linear-gradient(360deg, #D43C28 8.84%, #FF7966 100%);
+    border-radius: 6px;
+    color: #FFF;
+    border-bottom: 4px solid #841b0d;
+}
+
+.a_first_screen_form p.sgl {
+    position: relative;
+}
+
+
+.a_first_screen_form p.sgl, .a_first_screen_form p.sgl a {
+    font-size: 12px;
+    margin-top: 18px;
+    color: #FFF;
+}
+
+.a_first_screen_form span {
+    color: #fff;
+    display: block;
+    padding-left: 18px;
+}
+
+.a_first_screen_form input[type=checkbox] {
+    display: none;
+}
+
+.a_first_screen_form label:after {
+    content: '';
+    display: block;
+    top: 1px;
+    height: 10px;
+    width: 10px;
+    outline: 1px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.a_first_screen_form input[type=checkbox]:checked + label:after {
+    outline: 1px solid #fff;
+    border: 2px solid #fff;
+    top: 1px;
+    width: 10px;
+    height: 10px;
+    background-color: #94c759;
+    margin-right: 10px;
+    float: left;
+}
+
+.application--top {
+    display: none;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .a_first_screen_form .col {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .a_first_screen_title h1 {
+        font-size: 40px;
+    }
+
+    .a_first_screen_form .col {
+        width: 158px;
+    }
+
+    .a_first_screen {
+        background-position: left -500px bottom 0;
+    }
+
+    .a_header_tel {
+        margin-left: 90px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .a_first_screen {
+        background-position: left -550px bottom 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .a_first_screen {
+        background-position: left -570px bottom 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .a_header_tel {
+        margin-left: 0;
+    }
+
+    .a_first_screen_title {
+        padding: 30px 0 0 0;
+    }
+
+    .a_first_screen {
+        min-height: 280px;
+        background-position: bottom;
+    }
+
+    .a_first_screen_form {
+        display: none;
+    }
+
+    .a_first_screen_title h1 {
+        font-size: 30px;
+        letter-spacing: 1.5px;
+        line-height: 120%;
+    }
+
+    .a_first_screen_subs h2 {
+        font-size: 24px;
+        letter-spacing: 1.5px;
+        padding-top: 8px;
+    }
+
+    .a_first_screen_subs img {
+        max-width: 30px;
+    }
+
+    .a_first_screen_subs {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .application--top {
+        display: block;
+        overflow: hidden;
+        margin-top: 25px !important;
+    }
+
+    .application--top a.input-top, .application--top input[type="text"] {
+        width: 280px !important;
+        height: 38px;
+        padding-top: 6px !important;
+        font-size: 17px !important;
+    }
+
+    .application input[name="submit"], #formMain input#button, #formMainV input#button {
+        font: 17px "PTS75F";
+        letter-spacing: 1px;
+        padding: 0;
+    }
+
+    .or {
+        color: #4f4f4f;
+    }
+}
+
+@media (max-width: 560px) {
+    .a_first_screen {
+        min-height: auto;
+        margin-bottom: 10px;
+    }
+
+    .a_first_screen_title h1 {
+        font-size: 20px;
+        letter-spacing: 1.5px;
+        line-height: 120%;
+        margin-left: -10px;
+    }
+
+    .a_first_screen_subs h2 {
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        padding-top: 8px;
+    }
+}
+
+@media (max-width: 350px) {
+    .a_first_screen_title h1 {
+        font-size: 18px;
+    }
+}
+
+.gift-img {
+    transition: all 0.4s ease-in-out;
+}
+
+.gift-img:hover {
+    transform: scale(1.1);
+}

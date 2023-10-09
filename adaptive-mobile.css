@@ -1,0 +1,837 @@
+@media screen and (max-width: 768px){	.action-image {    background: url(/images/action-image.jpg) no-repeat center top;    height: 175px;    background-size: 150%;}p.action-desc {    margin: 0% 0 0;}.action .container:last-of-type {    padding: 0px 0px 10px;}
+.action-image1 {    background: url(/images/action-image.jpg) no-repeat center top;    height: 175px;    background-size: 150%;}
+#bg_popup {
+    left: 40%;
+    max-width: 50%;
+	height: 65%;
+	padding-left: 10%;
+    padding-right: 10%;
+}
+#bg_popup form input[type="text"] {
+    padding: 0 7% 0;
+    max-width: 240px;
+    width: 100%;
+    height: 40px;
+}
+.v-right {
+    display: none;
+}
+.v-left {
+    width: 100%;
+}
+.container.vakansii {
+    margin-top: 30px;
+}
+}
+
+@media screen and (max-width: 737px){
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+/* Шрифты не скачут! */
+html * {
+	max-height:1000000px;
+}
+/* /Шрифты не скачут! */
+
+body{
+	min-width: 320px;
+	font: 14px "PTS55F", sans-serif;
+	background: #fff;
+	color: #000;
+}
+
+li{list-style-type: none;}
+span, a{
+	text-decoration: none;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-ms-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	line-height: 1;
+	color: #323232;
+}
+h1, h2, h3, h4, h5, h6, p{
+	font-weight: normal;
+	line-height: 1;
+}
+input, button, textarea{
+	outline: none;
+	border: none;
+	resize: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type='number'] {-moz-appearance: textfield;}
+input[type="search"]::-webkit-search-cancel-button {-webkit-appearance: none;}
+input[type="submit"]{
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	cursor: pointer;
+}
+
+
+
+/* Убираем значок скайпа */
+.skype_c2c_print_container.notranslate{display: block !important;}
+.skype_c2c_menu_container{display: none !important;}
+#skype_c2c_container{display: none !important;}
+/* /Убираем значок скайпа */
+
+.clear{clear: both;}
+h2{
+	font: 22px "BebasNeueBold";
+	text-transform: uppercase;
+	color: #393939;
+	letter-spacing: 0.2px;
+}
+h2::after{
+	display: block;
+	margin-top: 8px;
+	content: '';
+	width: 55px;
+	height: 2px;
+	background: #8d3dff;
+}
+
+.container{
+	margin: 0 auto;
+	padding: 0 10px;
+	width: 75%;
+}
+
+.header .container{    padding: 15px 10px;
+    text-align: center;}
+.header .logo img{
+	/* margin-left: 13px; */
+	width: 77px;
+}
+.header .line{display: none;}
+.header .site-name{
+	    /* display: none; */
+    position: relative;
+    left: 0;
+    font-size: 12px;
+    width: 100%;
+}
+.header .site-name p {
+    font: 15px/30px "BebasNeueRegular";
+}
+.header .address, .header .rezhim{display: none;}
+.header .phone{
+float: none;
+    width: 100%;
+    text-align: center!important;
+    margin-top: 0;
+    margin-right: 10px;
+    font: 23px "BebasNeueBold";
+    color: #333;
+    text-align: right;
+    letter-spacing: 0.3px;
+}
+.header .phone p{
+	margin-top: 0;
+	letter-spacing: 0.4px;
+}
+.header .phone .order_call{
+	display: inline-block;
+	margin-top: 5px;
+	padding: 0 19px 0 40px;
+	height: 26px;
+	background: #71BC3F url("https://perm.okna-olkon.ru/landing_files/css/../images/phone.png") no-repeat 14px center;
+	border-radius: 2px;
+	font: 12px/26px "PTS75F";
+	color: #fff;
+	letter-spacing: 0.2px;
+	cursor: pointer;
+	border-bottom: 2px solid #53892F;
+	vertical-align: top;
+}
+.header .phone .order_call span{display: none;}
+
+.a_map_map img{
+height:0px;
+}
+
+.main-screen{
+	background: url("https://perm.okna-olkon.ru/landing_files/css/../images/main_screen.jpg") no-repeat center top;
+	background-size: cover;
+	min-height: 200px;
+}
+.main-screen .container{padding: 25px 10px;}
+.main-screen .main-text{
+	float: right;
+	margin-left: 45px;
+	width: auto;
+	text-align: right;
+}
+.main-screen .main-text h1{
+	font: 24px "BebasNeueBold";
+	margin-bottom: 10px;
+	line-height: 28px;
+	letter-spacing: 0.9px;
+}
+.main-screen .main-text h1 br{display: none;}
+.main-screen .main-text h1 span{color: #71bc3f;}
+.main-screen .main-text h3{
+	margin-left: 0;
+	font: 18px/22px "BebasNeueBold";
+	letter-spacing: 0.1px;
+	color: #333333;
+}
+.main-screen .main-text h3 b{display: block;}
+.main-screen .main-text h3 span{color: #53892f;}
+.main-screen .application{display: none;}
+
+
+.application.application-main{box-shadow: 0 4px 5px rgba(58,59,59, 0.25), inset 0 1px 2px rgba(167, 169, 169, 0.56);}
+.application{
+	margin: 15px auto 0;
+	padding: 10px 0 15px;
+	width: 300px;
+	background-color: rgba(253,252,251,0.70);
+	border-radius: 2px;
+	text-align: center;
+}
+.application p{
+	font: 9px "PTS55F";
+	color: #393939;
+}
+.application p span{
+	font: 9px "PTS75F";
+	color: #393939;
+}
+.application form{margin-top: 10px;}
+.application input{border-radius: 3px;}
+.application input[type="text"], .application input[type="email"], .application input[type="tel"]{
+	margin: 0 auto 15px auto;
+	padding: 0 40px;
+	height: 37px;
+	width: 60%;
+	background: #fff url("https://perm.okna-olkon.ru/landing_files/css/../images/phone-gray.png") no-repeat 17px center;
+	box-shadow: inset 0 0 2px rgba(0,0,0, 0.4);
+	color: #333;
+	font: 18px "PTS55F";
+}
+#purple{
+	background: #8d3dff url("img/guy.jpg") no-repeat 13px center;
+	background-size: 20px;
+}
+#red{
+	background: rgb(237, 28, 28) url("img/redguy.jpg") no-repeat 13px center;
+	background-size: 20px;
+}
+#abc{
+	background: #8d3dff url("img/guy.jpg") no-repeat 13px center;
+	background-size: 20px;
+}
+.application input[name="submit"], #formMain input#button, #formMainV input#button{
+	margin-top: 10px;
+    margin-bottom: 10px;
+	padding: 0 0 0 30px;
+	height: 37px;
+	width: 90%;
+	border-radius: 8px;
+	font: 15px "PTS75F";
+	color: #FBFBFB;
+	vertical-align: bottom;
+	border-bottom: 3px solid #6d2fd2;
+}
+.application input[name="submit"]:hover{background-color: #6d2fd2;}
+input[type="text"]::-webkit-input-placeholder { /* WebKit browsers */
+	color: #A7A7A7;
+	font: 18px "PTS55F";
+	opacity: 1;
+}
+input[type="submit"]::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color: #A7A7A7;
+	font-size: 18px "PTS55F";
+	opacity: 1;
+}
+input[type="submit"]:-ms-input-placeholder { /* Internet Explorer 10+ */
+	color: #A7A7A7;
+	font-size: 18px "PTS55F";
+	opacity: 1;
+}
+input[type="submit"]::-o-placeholder { /* Opera */
+	color: #A7A7A7;
+	font-size: 18px "PTS55F";
+	opacity: 1;
+}
+
+
+.order_guager{display: inline-block;}
+
+
+.products .container{padding: 35px 10px;}
+.products .wr-products{
+	display: block;
+	margin-top: 10px;
+	text-align: center;
+}
+.products .product-item, #balkonBlock .product-item{
+	display: inline-table;
+	margin: 15px 0 0;
+	padding: 12px 0 20px;
+	width: 266px;
+	border: 1px solid #E7E8E8;
+	text-align: left;
+	vertical-align: top;
+	text-align: center;
+}
+.products .prices_to_site{
+	margin: 15px 10px 0;
+	font-size: 14px;
+	text-align: center;
+}
+
+
+.advantages{display: none;}
+
+.works{
+	background: none;
+	border-top: 1px solid #ccc;
+}
+.works .container{
+	padding: 35px 10px;
+	text-align: center;
+}
+.works h2{
+	font-size: 24px;
+	text-align: left;
+}
+.works .work-top{margin-top: 30px;}
+.works .work-bottom{margin-top: 0;}
+.works .work-item{
+	display: inline-block;
+	margin: 15px 10px 20px;
+	width: 280px;
+	text-align: center;
+	vertical-align: top;
+}
+.works .work-item.work-2 img{ margin-bottom: 20px; transition: all 0.9s;}
+.works .work-item.work-3 img{ margin-bottom: 20px;transition: all 1.3s;}
+.works .work-item.work-4 img{ margin-bottom: 20px;transition: all 2s;}
+.works .work-item img{
+	margin-bottom: 20px;
+	transition: all 0.4s;
+	opacity: 1 !important;
+}
+.works .work-item p{
+	padding: 10px;
+	margin-top: -20px !important;
+	border: 0px;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 0.2px;
+}
+.works .work-item p br{display: none;}
+.works .work-text{
+	position: relative;
+	margin: 5px auto 0;
+	padding: 10px 10px;
+	width: 280px;
+}
+.works .work-text p{
+	margin: 0px !important;
+	line-height: 18px;
+	font-size: 14px;
+	text-align: center;
+}
+.works .work-text p br{display: none;}
+.works .work-text img{display: none;}
+.works .application{display: none;}
+
+
+.main-video{
+	display: none;
+	background: url("https://perm.okna-olkon.ru/landing_files/css/../images/bg-video.jpg") no-repeat center;
+	background-size: cover;
+	color: #fff;
+	transition: all 0.8s;
+	cursor: pointer;
+}
+.main-video:hover{opacity: 0.87;}
+.main-video .container{min-height: 200px;}
+.main-video .video{display: none;}
+.main-video .video{
+	display: inline-block;
+	margin: 0;
+	width: 300px;
+	line-height: 200px;
+}
+.main-video .video img{
+	display: inline-block;
+	vertical-align: middle;
+	transition: all 0.8s;
+	width: 45px;
+}
+.main-video:hover img{transform: rotate3d(1,0,1,360deg) scale(1.1);}
+.main-video .video h3{
+	display: inline-block;
+	margin-left: 15px;
+	font: 24px/34px "BebasNeueBold";
+	letter-spacing: 0.2px;
+	vertical-align: middle;
+}
+
+
+.about-clients .container{padding: 35px 10px;}
+.about-clients .advantages{
+	display: block;
+	text-align: center;
+}
+.about-clients .advantages-item{
+	display: inline-block;
+	margin: 15px 0 0 0;
+	width: 147px;
+	vertical-align: top;
+	color: #333;
+}
+.about-clients .advantages-item .photo{
+	margin-bottom: 0;
+	line-height: 70px;
+	text-align: center;
+}
+.about-clients .advantages-item .photo img{
+	vertical-align: middle;
+	width: 50px;
+}
+.about-clients .advantages-item .name{font: 30px "BebasNeueBold";}
+.about-clients .advantages-item .text{font: 14px/20px "PTS55F";}
+
+.about-clients .application{display: none;}
+
+.about-clients .about-items{display: none;}
+.about-clients .about-bottom{
+	margin-top: 20px;
+	margin-left: auto;
+    margin-right: auto;
+	width: 300px;
+}
+.about-clients .about-bottom h3{
+	margin-bottom: 10px;
+	font: 24px/30px "BebasNeueBold";
+	color: #333;
+}
+.about-clients .about-bottom h3 span{color: #71BC3F;}
+.about-clients .about-bottom .text{
+	margin-top: 10px;
+	width: 100%;
+	font-size: 14px;
+	line-height: 18px;
+}
+.about-clients .about-bottom .text span{color: #58AC20;}
+.about-clients .about-bottom .text br{display: none;}
+
+
+.about-company .slider .slide{display: none;}
+
+
+.where-to-find{border-top: 1px solid #ccc;text-align: center;}
+.where-to-find .container{
+	padding: 35px 10px;
+	font: 24px "BebasNeueBold";
+	color: #333333;
+}
+.where-to-find .main-address{
+	display: inline-block;
+	margin-top: 0;
+	margin-left: 0;
+	width: 300px;
+	vertical-align: top;
+	text-align: center;
+}
+.where-to-find .address{
+	display: inline-block;
+	margin: 15px 0 0 0px;
+	vertical-align: top;
+	font: 20px "BebasNeueBook";
+	color: #000;
+}
+.where-to-find .address img{
+	float: left;
+	margin-top: 4px;
+	margin-left: 20px;
+	vertical-align: top;
+}
+.where-to-find .address .address-text {
+	display: inline-block;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	width: 180px;
+	text-align: left;
+}
+.where-to-find .address .address-text p {
+	display: inline-block;
+	margin-left: 0;
+	line-height: 28px;
+}
+.where-to-find .address .address-text a{
+	display: inline-block;
+	text-decoration: underline;
+	color: #3083bd;
+}
+.where-to-find .address .address-text a:hover{text-decoration: none;}
+.where-to-find .questions{
+	display: inline-block;
+	margin-left: 0;
+}
+.where-to-find .questions .question-manager{
+	display: inline-block;
+	margin-top: 10px;
+	padding: 10px 20px;
+	width: 260px;
+	font: 18px "PTS75F";
+	color: #FBFBFB;
+	background: #71BC3F;
+	border-radius: 5px;
+	border-bottom: 3px solid #53892F;
+	cursor: pointer;
+	text-align: center;
+}
+.where-to-find .questions .question-manager:hover{background-color: #63B027;}
+.where-to-find .questions p{
+	margin-left: 0;
+	line-height: 30px;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+
+.main-map{position: relative;}
+.main-map iframe{
+	display: block;
+	width: 100%;
+	height: 420px;
+}
+.bg-map{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+.footer .container{
+    width: 95%;
+    padding: 15px 1px;
+}
+.footer a.logo {
+    display: none;
+}
+.footer .logo img{
+	margin-top: 0;
+	margin-left: 13px;
+	width: 79px;
+}
+.footer .line{display: none;}
+.footer .site-name{display: none;}
+
+.footer .address{
+    width: 50%;
+    margin: 0;
+}
+
+.footer .address img{
+    display: none;
+}
+.footer .address .address-text{
+    margin-left: 0px;
+}
+.footer .address .address-text p{
+    font-size: 90%;
+}
+.footer .address .address-text .dop{
+    font-size: 58%;
+}
+
+
+.footer .phone{
+	float: left;
+	width: 50%;
+    margin: 0;
+	font: 23px "BebasNeueBold";
+	color: #333;
+	text-align: left;
+	letter-spacing: 0.3px;
+	margin-left: 1px;
+    margin-top: 20px;
+}
+.footer .phone p{
+	margin-top: 0;
+	letter-spacing: 0.4px;
+}
+.footer .phone .order_call{
+	display: inline-block;
+	margin-top: 5px;
+	padding: 0 19px 0 40px;
+	height: 26px;
+	background: #8d3dff url("https://perm.okna-olkon.ru/landing_files/css/../images/phone.png") no-repeat 14px center;
+	border-radius: 2px;
+	font: 12px/26px "PTS75F";
+	color: #fff;
+	letter-spacing: 0.2px;
+	cursor: pointer;
+	border-bottom: 2px solid #6d2fd2;
+	vertical-align: top;
+}
+.footer .phone .order_call span{display: none;}
+.footer .requisites{display: none;}
+
+
+.background{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, 0.8);
+}
+.popup_box{
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -195px;
+	margin-left: -150px;
+	padding: 20px 10px 0;
+	width: 280px;
+	height: 310px;
+	background: #fff;
+	text-align: center;
+	color: #282528;
+}
+.popup_box form select {
+	margin-bottom: 5px;
+	padding-left: 43px;
+	width: 262px;
+	height: 40px;
+	border: 1px solid #8E8E8E;
+	border-radius: 3px;
+	font-size: 17px;
+	color: #212121;
+}
+.popup_box h3{font: 20px/1 "PTS75F"!important;}
+.popup_box p{
+	margin-top: 2px;
+	font: 13px/14px "PTS75F";
+}
+.popup_box form{margin-top: 15px;}
+.popup_box form .user_name{background: #fff url("https://perm.okna-olkon.ru/landing_files/css/../images/user_name.png") no-repeat 13px center;}
+.popup_box form .user_phone{background: #fff url("https://perm.okna-olkon.ru/landing_files/css/../images/user_phone.png") no-repeat 13px center;}
+.popup_box form input[type="text"], .popup_box form input[type="tel"]{
+	margin-bottom: 5px;
+	padding: 0 13px 0 47px;
+	width: 200px;
+	height: 40px;
+	border: 1px solid #8E8E8E;
+	border-radius: 3px;
+	font-size: 17px;
+	color: #212121;
+}
+.popup_box form input::-webkit-input-placeholder { /* WebKit browsers */
+	color: #212121;
+	opacity: 1;
+}
+.popup_box form input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color: #212121;
+	opacity: 1;
+}
+.popup_box form input:-ms-input-placeholder { /* Internet Explorer 10+ */
+	color: #212121;
+	opacity: 1;
+}
+.popup_box form input::-o-placeholder { /* Opera */
+	color: #212121;
+	opacity: 1;
+}
+.popup_box form input[type=submit]{
+	margin-top: 2px;
+	width: 262px;
+	height: 40px;
+	border-bottom: 3px solid #6d2fd2;
+	border-radius: 4px;
+	background: #8d3dff;
+	font-size: 18px;
+	color: #fff;
+}
+.popup_box form input[type=submit]:hover{background: #6d2fd2;}
+.popup_box .close{
+	position: absolute;
+	top: -30px;
+	right: 0;
+	cursor: pointer;
+}
+.popup_box .close:hover{opacity: 0.7;}
+
+
+
+.wr-thank .container{
+	padding: 10px 0 30px;
+	color: #393939;
+}
+.wr-thank .thank-left{
+	display: inline-block;
+	width: 300px;
+	vertical-align: top;
+}
+.wr-thank .thank-left .title{font: 28px/1 "PTS75F";}
+.wr-thank .thank-left .description{
+	margin-top: 10px;
+	font-size: 20px;
+	line-height: 22px;
+}
+.wr-thank .thank-left .description br{display: none;}
+.wr-thank .thank-left .description span{font-family: "PTS75F";}
+.wr-thank .thank-left .text{
+	margin-top: 12px;
+	font-size: 16px;
+	line-height: 20px;
+}
+.wr-thank .thank-left .button + .button{margin-left: 2px;}
+.wr-thank .thank-left .button{
+	display: inline-block;
+	margin-top: 20px;
+	width: 147px;
+	height: 34px;
+	background: #71BC3F;
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+	line-height: 2.3;
+	border-bottom: 3px solid #385E1E;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.wr-thank .thank-left .button:hover{background: #58A227;}
+
+.wr-thank .thank-right{
+	display: inline-block;
+	width: 300px;
+	margin-top: 25px;
+	margin-left: 0;
+	vertical-align: top;
+	text-align: center;
+}
+.wr-thank .thank-right .people{
+	display: inline-block;
+	margin-bottom: 30px;
+	font-size: 18px;
+}
+.wr-thank .thank-right .people img{
+	width: 100px;
+	height: 100px;
+}
+.wr-thank .thank-right .people .name{
+	margin-top: 5px;
+	font-family: "PTS75F";
+}
+.wr-thank .thank-right .people .position{margin-top: 5px;}
+.wr-thank .thank-right .people a{
+	display: block;
+	margin-top: 7px;
+	color: #3083bd;
+	text-decoration: underline;
+}
+
+
+}
+@media screen and (max-width: 760px){
+  .share h2 {
+      display: none;
+  }
+  
+.youtube {
+    max-height: 180px;
+}
+}
+
+@media screen and (max-width: 425px){	.action-image {    height: 125px;    background-size: 170%;}.action-image1 {    height: 125px;    background-size: 170%;}.action .application.application-main {    box-shadow: none;}
+#bg_popup {
+        left: 50%;
+    width: 50%;
+}
+#bg_popup form input[type="text"] {
+    width: 90%;
+}
+#bg_popup form input[type=submit] {
+    background-size: 90% 50px;
+    width: 107%;
+}
+
+.youtube {
+    max-height: 190px;
+}
+
+.container{
+	width: auto;
+}
+
+p.sgl {
+    margin-top: auto;
+}
+
+.container-wrappers-top {
+    margin-top: 1.5em;
+}
+
+}
+
+@media screen and (max-width: 375px)
+{	
+
+.action-image {
+height: 125px;
+background-size: 160%;
+background-position: 50%;}
+
+.action-image1 {
+height: 125px;
+background-size: 160%;
+background-position: 50%;}
+
+.container-top {
+    min-height: 740px;
+}
+
+.sert img {
+    max-width: 150px;
+}
+
+}
+
+@media screen and (max-width: 320px)
+{
+
+.container{
+	width: 300px;
+}
+
+.container-top {
+    min-height: 750px;
+}
+
+.action .container {
+padding: 51px 0px 10px;}
+
+#bg_popup {
+left: 60%;
+width: 50%;}
+
+.sert img {
+    max-width: 140px;
+}
+
+}

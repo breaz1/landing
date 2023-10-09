@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="keywords" content="отделка окон установка окон отделка балконов установка балконов оконные конструкции балконные конструкции энергосбережение профильные системы стеклопакеты вентиляция и проветривание" />
+
+<meta name="description" content="Онлайн калькулятор "Честной Цены" - это удобный инструмент для тех, 
+кто хочет быстро и точно оценить стоимость отделки окон и балконов. Воспользовавшись калькулятором, 
+вы сможете выбрать необходимые параметры, такие как размеры, материалы и тип отделки, и получить точную цену на наши услуги. 
+Теперь вы можете сориентироваться в ценах на отделку окон и балконов, не покидая дома. 
+Наш онлайн калькулятор - это быстрый и удобный способ оценить стоимость работ, которые мы готовы выполнить для вас профессионально и качественно.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(94285033, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/94285033" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+    <link rel="stylesheet" href="calc.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="adaptive-mobile.css">
+    <link rel="stylesheet" href="slick.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="slick-theme.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Калькулятор</title>
+</head>
+<body>
+    <style>
+        .a_header{
+         min-height: 140px;
+
+    z-index: 10;
+
+        }
+        
+        .a_logo{
+            padding-top: 20px;
+            width: 450px;
+            float: left;
+        }
+        
+        .a_logo .line {
+            display: inline-block;
+            margin: 0 10px 0 32px;
+            width: 3px;
+            height: 98px;
+            vertical-align: top;
+            background-color: #8d3dff;
+        }
+        
+        .a_logo .site-name {
+            display: inline-block;
+            margin-top: 10px;
+            vertical-align: top;
+        
+        }
+        
+        .a_logo .site-name p {
+            font: 24px/120% "BebasNeueRegular";
+            color: #4F4F4F;
+            letter-spacing: 2px;
+        }
+        
+        
+        .a_header_btn{
+            padding-top: 40px;
+            float: left;
+            width: 230px;
+        }
+        
+        .a_header_btn img{
+            margin-right: 10px;
+            display: block;
+            float: left;
+        }
+        
+        .a_header_btn p{
+            display: inline-block;
+            font: 20px/120% "BebasNeueBold";
+            color: #4F4F4F;
+            margin-top: 18px;
+        }
+        
+        .a_header_mobile_btn{
+            padding: 40px 0 0 25px;
+            float: left;
+            width: 230px; 
+        }
+        
+        .a_header_mobile_btn img{
+            margin-right: 10px;
+            display: block;
+            float: left;
+        }
+        
+        .a_header_mobile_btn p{
+            display: inline-block;
+            font: 20px/120% "BebasNeueBold";
+            color: #4F4F4F;
+            margin-top: 18px;
+        }
+        
+        
+        .a_header_tel{
+            padding-top: 20px;
+            float: left;
+            min-width: 215px;
+            width: 230px;
+        }
+        
+        .a_header_tel_a{
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            height: 60px;
+        }
+        
+        .a_header_tel img{
+            margin-right: 10px;
+            display: block;
+            float: left;
+        }
+        
+        .a_header_tel p{
+            font: 25px/120% "BebasNeueRegular";
+            color: #4F4F4F;
+            padding: 0;
+        }
+        
+        .a_header_tel p span{
+            font: 28px/120% "BebasNeueBold";
+            color: #4F4F4F;
+        }
+        
+        .a_header_callorder{
+            font: 12px "PTS75F";
+            cursor:pointer;
+            text-transform: uppercase;
+            color: #fff;
+            display: block;
+            background: #8d3dff;
+            margin: 0;
+            padding: 7px;
+            letter-spacing: 1px;
+            text-align: center;
+            border-radius: 8px;
+            border-bottom: 3px solid #6d2fd2;
+        }
+        
+        .a_header_callorder:hover{
+            background: #6d2fd2;
+        }
+        
+        .a_nav{
+         min-height: 40px;
+         background:#71BC3F;
+        }
+        
+        .a_nav ul li{display: block;float: left;width: 20%;text-align: center; position:relative;
+            padding: 0 15px;
+            
+        }
+        
+        .a_nav ul li:after{
+            content: "";
+            position: absolute;
+            display: block;
+            top: 10px;
+            right: 0;
+            height: 20px;
+          border-right: 1px solid #fff;
+        }
+        
+        .a_nav ul li:last-child:after{
+                content: none;
+        }
+        
+        .a_nav ul li a{
+            position: relative;
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            font-family: "PTS75F";
+            font-size: 18px;
+            text-transform: uppercase;
+            color: #fff;
+            letter-spacing: 1.5px;
+            
+        }
+        
+        .a_nav ul li a:hover{
+            background: #53892F;
+            background: -moz-linear-gradient(360deg, #53892F -37.5%, rgba(83, 137, 47, 0) 83.75%);
+            background: -webkit-linear-gradient(360deg, #53892F -37.5%, rgba(83, 137, 47, 0) 83.75%);
+            background: linear-gradient(360deg, #53892F -37.5%, rgba(83, 137, 47, 0) 83.75%);
+        }    
+        
+        
+        .burger{
+            display:none;  
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+        }
+        
+        .burger:hover{
+            background: #efefef;
+        }
+        
+        .burger-close{
+            float: right;
+            padding: 20px;
+            cursor: pointer;
+        }
+        
+        .mobile-menu {
+          background: #fff;
+          right: -285px;
+          height: 100%;
+          position: fixed;
+          width: 285px;
+          box-shadow: 0 0 10px 0 rgba(0,0,0,.30);
+          z-index: 9;
+        }
+        
+        .mobile-menu ul {
+            list-style: none;
+            margin: 30px 0 0 0;
+            padding-left: 25px;
+        }
+        
+        .mobile-menu li {
+            border-bottom: 1px solid #71bc3f;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 35px;
+            padding-top: 25px;
+        }
+        
+        .mobile-menu li:hover {
+          cursor: pointer;
+          background-color: #fefefe;
+          }
+        
+        .mobile-menu a {
+            color: #828282;
+            font-size: 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        
+        
+            
+        @media (max-width: 1200px){
+            .a_logo {
+            width: 250px;
+            }
+            .a_logo img{
+            max-width: 80px;
+            }
+            
+            .a_logo .line {
+             display: none;   
+            }
+            
+            .a_logo .site-name p {
+            font-size: 18px;
+            }
+            
+            .a_logo .site-name p br{
+            display: none;  
+            }
+        }
+        
+        
+        @media (max-width: 992px){
+            .a_header_btn{display:none;}
+            .a_nav{display:none;}
+            .burger{display:block;}
+        }
+        
+        @media (max-width: 768px){
+            .a_logo {
+            width: 100%;
+            text-align: center;
+            }
+            .a_logo img {
+            max-width: 75px;
+            }
+            .a_logo .site-name {
+            text-align: center;
+            display: block;
+            }
+            .a_logo .site-name p {
+            font-size: 16px;
+            letter-spacing: normal;
+            }
+            .a_header_tel {
+            padding-top: 10px;
+            width: 100%;
+            }
+            .a_header_tel_a {
+            text-align: center;
+            height: 40px;
+            }
+            .a_header_tel img {
+            display: none;
+            }
+            .a_header_callorder{
+            max-width: 70%;
+            margin: 0 auto;
+            }   
+        
+        }
+        
+        
+        
+        /*POPUP FORMS*/
+        .popup_box {
+         height: auto;
+         padding: 38px;
+         width: 400px;
+        }
+        
+        .popup_box form input[type="text"], .popup_box form input[type="tel"] {
+            width: 100%;
+        } 
+        
+        .popup_box form select {
+            width: 100%;
+        } 
+        
+        .popup_box form input[type=submit] {
+            width: 100%;
+        }
+        
+        @media (max-width: 737px){
+        .popup_box {
+            width: 300px;
+        }
+        }
+        
+        
+        /*PRODUCTS*/
+        .products .product-item {
+            display: inline-table;
+            margin: 42px 10px 0;
+            padding: 18px 0 23px;
+            width: 256px;
+        }
+        
+        /*WORKs*/
+        .worKs .container {
+            padding: 73px 0 42px;
+        }
+        @media (max-width: 737px){
+        .worKs .container {
+            width: 95%;
+        }
+    }
+        </style>
+    <header class="section a_header">
+        <div class="row">
+        <div class="section-container">
+        
+        <div class="a_logo">
+        <a href="index.html"><img src="img/logo.jpg"></a>
+        <div class="line"></div>
+                    <div class="site-name">
+                        <p>Окна и балконы <br /> в Перми</p>
+                    </div>
+        </div>
+        
+        <div class="a_header_btn">
+        <a href="calc.html" class="beber2">
+            <img src="img/a_header_icon_1.jpg">
+            <p>Калькулятор</p>
+        </a>
+        </div>
+        
+        <div class="a_header_btn">
+        <a><img src="img/a_header_icon_2.jpg">
+        <p>Акции</p>
+        </a>
+        </div>
+        
+        <div class="a_header_tel">
+        <a class="a_header_tel_a" href="tel:+7(992)206-09-65" onclick="yaCounter79305295.reachGoal('telephone'); ga('send', 'event', 'telephone'); var _tmr = window._tmr || (window._tmr = []); _tmr.push({ id: '3265021', type: 'reachGoal', goal: 'telephone' }); return true;"><img src="img/a_header_icon_3.jpg">
+        <p>+7(992)<span>206-09-65</span></p>
+        </a>
+        <span class="a_header_callorder order_call beber" style="z-index:1000;">Заказать обратный звонок</span>
+        </div>
+</header>
+
+<div class="container mt-5 calculator">
+    <div class="row">
+        <div class="col-12">
+            <div class="mb-5" id="div" align="center">
+                <img id="image" style="display: none; width: 300px; height: 300px;"  src="#" >
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+            <!-- =----------------------------------------------------------------------------------------->
+
+            <h4 class="mt-5">Тип балкона:</h4>
+            <hr>
+            <p class="calc-text"><input id="p" type="radio" name="T" value="П-образный" onclick="selectType(this.value);"> <label for="p">П-образный</label></p>
+            <p class="calc-text"><input id="g" type="radio" name="T" value="Г-образный" onclick="selectType(this.value);"><label for="g">Г-образный</label></p>
+            <p class="calc-text"><input id="lod3" type="radio" name="T" value="3-метровая лоджия" onclick="selectType(this.value);"><label for="lod3"> 3-метровая лоджия</label></p>
+            <p class="calc-text"><input id="lod6" type="radio" name="T" value="6-метровая лоджия" onclick="selectType(this.value);"><label for="lod6"> 6-метровая лоджия</label></p>
+            <p class="calc-text"><input id="bz" type="radio" name="T" value="Балкон с закруглением" onclick="selectType(this.value);"><label for="bz"> Балкон с закруглением</label></p>
+            <p class="calc-text"><input type="checkbox" id="Ks" name="Ks" onclick="selectExternalFinish3();" disabled><label for="Ks"> Балкон с крышей</label></p>
+
+        </div>
+        <div class="col-12 col-md-6">
+            <h4 class="mt-5">Вид остекления:</h4>
+            <hr>
+
+            <p class="calc-text"><input id="aluminum" type="radio" name="V" value="Алюминиевая раздвижная система" onclick="selectView(this.value);"><label for="aluminum">  Алюминиевая раздвижная система</label></p>
+            <p class="calc-text"><input id="pvc" type="radio" name="V" value="ПВХ-остекление" onclick="selectView(this.value);"><label for="pvc">  ПВХ-остекление</label></p>
+
+        </div>
+
+        <div class="col-12 col-md-8">
+            <hr>
+            <h4>Отделка:</h4>
+            <h4>
+                <div class="calk_otdel">
+                    <div class="row">
+                        <div class=" col-12 col-md-6 ">
+                            <p class="calk_p">Внутренняя</p>
+                            <p class="calc-text"><input type="checkbox" name="O1" id="O1" value="Все стены" onclick="selectInternalFinish();">
+                                <label for="O1">Все стены</label></p>
+                            <p class="calc-text"><input type="checkbox" name="O2" id="O2" value="Пол" onclick="selectInternalFinish();">
+                                <label for="O2">Пол</label></p>
+                        </div>
+                        <div class=" col-12 col-md-6 ">
+                            <p class="calk_p">Наружная</p>
+                            <p class="calc-text"><input type="checkbox" name="O3" id="O3" value="Профнастил" onclick="selectExternalFinish();">
+                                <label for="O3">Профнастил</label></p>
+
+                            <p></p>
+                            <!-- <span class="text_red">Акция: шкаф в подарок!</span> -->
+                        </div>
+                    </div>
+                </div>
+            </h4>
+        </div>
+        <div class="col-12">
+                <div class="col-12 col-md-6">
+                    <p><b>Цена:</b><span id="P">Выберите нужное</span></p>
+                </div>
+            <p></p>
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+            <span class="a_map-order-top order_call beber">Вызвать замерщика</span>
+        </div> 
+    </div>
+    <!-- Post end-->
+</div>
+
+
+<script>
+
+    var T = ""; // Тип балкона
+    var V = ""; // Вид остекления
+    var O1 = false; // Внутренняя отделка - все стены
+    var O2 = false; // Внутренняя отделка - пол
+    var O3 = false; // Наружная отделка - профнастил
+    var O4 = false; // Наружная отделка - под ключ
+    var Ks = false;
+    var check = document.getElementById("Ks");
+    // Цены
+    var prices = {
+    "П-образный": {
+        "Алюминиевая раздвижная система": 27000,
+        "ПВХ-остекление": 30000
+    },
+    "Г-образный": {
+        "Алюминиевая раздвижная система": 25000,
+        "ПВХ-остекление": 28000
+    },
+    "3-метровая лоджия": {
+        "Алюминиевая раздвижная система": 18500,
+        "ПВХ-остекление": 21500
+    },
+    "6-метровая лоджия": {
+        "Алюминиевая раздвижная система": 27000,
+        "ПВХ-остекление": 32000
+    },
+    "Балкон с закруглением": {
+        "Алюминиевая раздвижная система": 27000,
+        "ПВХ-остекление": 32000
+    },
+    "Балкон с крышей": 8000,
+    "Внутренняя отделка": 16900,
+    "Пол": 7000,
+    "Наружная отделка - профнастил": 5000
+    };
+    var img = document.getElementById('image')
+    // Функция для пересчета цены
+    function calculatePrice() {
+    var price = 0;
+    
+    if (T && V) {
+        price += prices[T][V];
+    }
+    
+    if (O1) {
+        price += prices["Внутренняя отделка"];
+    }
+    
+    if (O2) {
+        price += prices["Пол"];
+    }
+    
+    if (O3) {
+        price += prices["Наружная отделка - профнастил"];
+    }
+    
+    if (O4) {
+        price += prices[T][V];
+    }
+    if(Ks){
+        price += prices["Балкон с крышей"];
+    }
+    
+    return price;
+    }
+
+    // Функция для обновления отображения цены
+    function updatePrice() {
+    var price = calculatePrice();
+    document.getElementById("P").textContent = price + " рублей";
+    }
+
+    // Функция для обработки выбора типа балкон
+    function selectType(type) {
+    T = type;
+    updatePrice();
+    if (type == "П-образный") {
+        if (V === "Алюминиевая раздвижная система") {
+            showImage("img/p1.jpg");
+            img.style.display = 'block';
+            check.disabled=false;
+        } else{
+            showImage("img/a1.jpg");
+            img.style.display = 'block';
+            check.disabled=false;
+        }
+    } else if (type === "Г-образный") {
+        if (V === "Алюминиевая раздвижная система") {
+            showImage("img/p2.jpg");
+            img.style.display = 'block';
+            check.disabled=false;
+        } else{
+            showImage("img/a2.jpg");
+            img.style.display = 'block';
+            check.disabled=false;
+        }
+    } else if (type === "3-метровая лоджия") {
+        if (V === "Алюминиевая раздвижная система") {
+            showImage("img/p3.jpg");
+            img.style.display = 'block';
+            check.disabled=true;
+        } else  {
+            showImage("img/a3.jpg");
+            img.style.display = 'block';
+            check.disabled=true;
+        }
+    } else if (type === "6-метровая лоджия") {
+        if (V === "Алюминиевая раздвижная система") {
+            showImage("img/p4.jpg");
+            img.style.display = 'block';
+            check.disabled=true;
+        } else{
+            showImage("img/a4.jpg");
+            img.style.display = 'block';
+            check.disabled=true;
+        }
+    } else if (type === "Балкон с закруглением") {
+        if (V === "Алюминиевая раздвижная система") {
+            showImage("img/p5.jpg");
+            img.style.display = 'block';
+            check.disabled=true;
+        } else{
+            showImage("img/a5.jpg");
+            img.style.display = 'block';
+            check.disabled=true;
+        }
+    } else {
+        hideImage();
+    }
+    }
+    // Функция для обработки выбора вида остекления
+    function selectView(view) {
+    V = view;
+    updatePrice();
+    selectType(T);
+    }
+
+    // Функция для обработки выбора внутренней отделки
+    function selectInternalFinish() {
+    O1 = document.getElementById("O1").checked;
+    O2 = document.getElementById("O2").checked;
+    updatePrice();
+    }
+
+    // Функция для обработки выбора наружной отделки
+    function selectExternalFinish() {
+    O3 = document.getElementById("O3").checked;
+    updatePrice();
+    }
+    function selectExternalFinish3() {
+    Ks = document.getElementById("Ks").checked;
+    updatePrice();
+    }
+
+    // Функция для обработки выбора наружной отделки "под ключ"
+    function selectExternalFinishFull() {
+    O4 = document.getElementById("O4").checked;
+    updatePrice();
+    }
+
+    // Инициализация начального состояния
+    function showImage(imageSrc) {
+        var image = document.getElementById("image");
+        image.src = imageSrc;
+        image.style.display = "block";
+    }
+
+    // Функция для скрытия картинки
+    function hideImage() {
+        var image = document.getElementById("image");
+        image.style.display = "none";
+    }
+
+
+    // Инициализация начального состояния и отображения картинки
+    updatePrice();
+</script>
+<div class="popup_box order_phone" style="display: none;">
+		<h3>Заказать звонок</h3>
+		<p>Введите ваши данные ниже, <br>мы перезвоним в указанное время</p>
+		<div class="divError" id="error"></div>
+		<form action="javascript:void(0);" name="zvonok" id="zvonok">
+		    <input type="hidden" name="tf" value="1688424873">
+            <input type="hidden" name="kf" value="47e9bf61591b471eb9a5c563e071225c">			<input name="formname" value="" id="zvk_tem" type="hidden">
+			<input class="utm_s" type="hidden" name="utm_s" value="">
+			<input class="utm_m" type="hidden" name="utm_m" value="">
+			<input class="utm_cnt" type="hidden" name="utm_cnt" value="">
+			<input class="utm_cmp" type="hidden" name="utm_cmp" value="">
+			<input class="user_name" type="text" id="user_name" name="name" placeholder="Введите имя" required="" value="">
+			<input class="user_phone" type="tel" id="user_phone" name="phone" placeholder="Введите телефон" required="" title="Введите номер телефона в любом удобном формате" value="">
+			                <select name="time" class="user_time" id="utime">
+                    <option selected="" value="Позвонить сейчас">Позвонить сейчас</option>
+                                            <option>08:00 - 09:00</option>
+                                            <option>09:00 - 10:00</option>
+                                            <option>10:00 - 11:00</option>
+                                            <option>11:00 - 12:00</option>
+                                            <option>12:00 - 13:00</option>
+                                            <option>13:00 - 14:00</option>
+                                            <option>14:00 - 15:00</option>
+                                            <option>15:00 - 16:00</option>
+                                            <option>16:00 - 17:00</option>
+                                            <option>17:00 - 18:00</option>
+                                            <option>18:00 - 19:00</option>
+                                            <option>19:00 - 20:00</option>
+                                    </select>
+            			<input type="submit" name="submit" value="Заказать звонок" id="submit">
+            <p class="sgl"><br>Отправляя заявку, вы соглашаетесь на <a href="../politika.html" target="_blank">обработку персональных данных</a></p>
+		</form>
+		<span class="close"><img src="img/close.png" alt="x"></span>
+	</div>
+    <script>
+        function send(name, phone, time) {
+            fetch("https://chestnayatsena-perm-okna.ru/newCall", {
+                method: "post",
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: name,
+                    phone: phone,
+                    time: time
+                })
+            })
+        }
+
+        var callOrderLink = document.querySelectorAll('.beber');
+        var popup = document.querySelector('.popup_box.order_phone');
+        var closeButton = popup.querySelector('.close');
+
+
+        callOrderLink.forEach(function(element) {
+            element.addEventListener('click', function() {
+                popup.style.display = 'block';
+                var overlay = document.createElement('div');
+                overlay.className = 'overlay';
+                document.body.appendChild(overlay);
+            });
+        });
+
+        closeButton.addEventListener('click', function() {
+            popup.style.display = 'none';
+            overlay = document.querySelector('.overlay');
+            if (overlay) {
+                overlay.parentNode.removeChild(overlay);
+            }
+        });
+
+        const ele = document.getElementById("zvonok")
+
+        function callback (form) {
+            popup.style.display = 'none';
+            var overlay = document.querySelector('.overlay');
+            if (overlay) {
+                overlay.parentNode.removeChild(overlay);
+            }  
+            const user_name =document.getElementById("user_name")
+            const user_phone = document.getElementById("user_phone")
+            const time = document.getElementById("utime")
+	console.log('user -'+user_name.value)
+console.log('phone -'+user_phone.value)
+console.log('time -'+time.value)
+            send(user_name.value, user_phone.value, time.value)
+            alert("Звонок успешно заказан!")
+        }
+
+        ele.addEventListener("submit", callback, false); 
+
+    </script> 
+</body>
+</html>
